@@ -1,0 +1,66 @@
+\hypertarget{_roman_errors_8c}{}\section{D\+:/\+Shared/\+S\+D\+T/\+T\+M\+P/\+Roman\+A\+P\+I\+Project/\+Roman\+A\+P\+I/src/\+Roman\+Errors.c File Reference}
+\label{_roman_errors_8c}\index{D\+:/\+Shared/\+S\+D\+T/\+T\+M\+P/\+Roman\+A\+P\+I\+Project/\+Roman\+A\+P\+I/src/\+Roman\+Errors.\+c@{D\+:/\+Shared/\+S\+D\+T/\+T\+M\+P/\+Roman\+A\+P\+I\+Project/\+Roman\+A\+P\+I/src/\+Roman\+Errors.\+c}}
+{\ttfamily \#include \char`\"{}Roman\+Errors.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_roman_errors_8c_ad2e1852057d53bdd36ef351f214944c3}{Print\+Error\+String} (int errorval)
+\item 
+const char $\ast$ \hyperlink{_roman_errors_8c_a78db1a01bedbcebe143a186aa4a05dd8}{Get\+Error\+String} (int errorval)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{_roman_errors_8c_a084bb883da7d9440ec954c1f77ca694d}{Roman\+Error\+Strings} \mbox{[}\hyperlink{_roman_errors_8h_af77c7961d68c111c984b986b39c0576baa0b3a613136d8d952400c97a1596f2c7}{R\+O\+M\+A\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+C\+O\+U\+NT}+1\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{Roman\+Errors.\+c@{Roman\+Errors.\+c}!Get\+Error\+String@{Get\+Error\+String}}
+\index{Get\+Error\+String@{Get\+Error\+String}!Roman\+Errors.\+c@{Roman\+Errors.\+c}}
+\subsubsection[{\texorpdfstring{Get\+Error\+String(int errorval)}{GetErrorString(int errorval)}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Get\+Error\+String (
+\begin{DoxyParamCaption}
+\item[{int}]{errorval}
+\end{DoxyParamCaption}
+)}\hypertarget{_roman_errors_8c_a78db1a01bedbcebe143a186aa4a05dd8}{}\label{_roman_errors_8c_a78db1a01bedbcebe143a186aa4a05dd8}
+
+
+Definition at line 46 of file Roman\+Errors.\+c.
+
+\index{Roman\+Errors.\+c@{Roman\+Errors.\+c}!Print\+Error\+String@{Print\+Error\+String}}
+\index{Print\+Error\+String@{Print\+Error\+String}!Roman\+Errors.\+c@{Roman\+Errors.\+c}}
+\subsubsection[{\texorpdfstring{Print\+Error\+String(int errorval)}{PrintErrorString(int errorval)}}]{\setlength{\rightskip}{0pt plus 5cm}void Print\+Error\+String (
+\begin{DoxyParamCaption}
+\item[{int}]{errorval}
+\end{DoxyParamCaption}
+)}\hypertarget{_roman_errors_8c_ad2e1852057d53bdd36ef351f214944c3}{}\label{_roman_errors_8c_ad2e1852057d53bdd36ef351f214944c3}
+
+
+Definition at line 33 of file Roman\+Errors.\+c.
+
+
+
+\subsection{Variable Documentation}
+\index{Roman\+Errors.\+c@{Roman\+Errors.\+c}!Roman\+Error\+Strings@{Roman\+Error\+Strings}}
+\index{Roman\+Error\+Strings@{Roman\+Error\+Strings}!Roman\+Errors.\+c@{Roman\+Errors.\+c}}
+\subsubsection[{\texorpdfstring{Roman\+Error\+Strings}{RomanErrorStrings}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Roman\+Error\+Strings\mbox{[}{\bf R\+O\+M\+A\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+C\+O\+U\+NT}+1\mbox{]}}\hypertarget{_roman_errors_8c_a084bb883da7d9440ec954c1f77ca694d}{}\label{_roman_errors_8c_a084bb883da7d9440ec954c1f77ca694d}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+\{
+    \textcolor{stringliteral}{"ROMAN\_ERROR\_CODE\_OK"},
+    \textcolor{stringliteral}{"ROMAN\_ERROR\_CODE\_GENERIC\_ERROR"},
+    \textcolor{stringliteral}{"ROMAN\_ERROR\_CODE\_BUFFER\_IS\_NULL"},
+    \textcolor{stringliteral}{"ROMAN\_ERROR\_CODE\_INVALID\_NUMBER"},
+    \textcolor{stringliteral}{"ROMAN\_ERROR\_CODE\_BUFFER\_OVERFLOW"},
+    \textcolor{stringliteral}{"ROMAN\_ERROR\_CODE\_WRONG\_SEQUENCE\_FORMAT"},
+    \textcolor{stringliteral}{"ROMAN\_ERROR\_CODE\_LACK\_OF\_ZERO"},
+    \textcolor{stringliteral}{"ROMAN\_ERROR\_CODE\_LACK\_OF\_MINUS\_VALS"},
+    \textcolor{stringliteral}{"UNKNOWN"}
+\}
+\end{DoxyCode}
+
+
+Definition at line 10 of file Roman\+Errors.\+c.
+

@@ -1,0 +1,272 @@
+\hypertarget{_roman_a_p_i_8c}{}\section{D\+:/\+Shared/\+S\+D\+T/\+T\+M\+P/\+Roman\+A\+P\+I\+Project/\+Roman\+A\+P\+I/src/\+Roman\+A\+PI.c File Reference}
+\label{_roman_a_p_i_8c}\index{D\+:/\+Shared/\+S\+D\+T/\+T\+M\+P/\+Roman\+A\+P\+I\+Project/\+Roman\+A\+P\+I/src/\+Roman\+A\+P\+I.\+c@{D\+:/\+Shared/\+S\+D\+T/\+T\+M\+P/\+Roman\+A\+P\+I\+Project/\+Roman\+A\+P\+I/src/\+Roman\+A\+P\+I.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Roman\+A\+P\+I.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_roman_a_p_i_8c_a2d30b269638fc81f0b65343454d54787}{Initialize\+Value\+Table} ()
+\item 
+char $\ast$ \hyperlink{_roman_a_p_i_8c_a8f4bc67a3689c865c83990a7c9dbb0c2}{Write\+Letter\+To\+Buffer} (char $\ast$buffer, const char $\ast$letter, int size)
+\item 
+int \hyperlink{_roman_a_p_i_8c_a11e86dd4776e0a195674e16ed1bace43}{Convert\+Int32\+To\+Roman\+Letter} (int Number, char $\ast$Buffer, int Buffer\+Size)
+\item 
+int \hyperlink{_roman_a_p_i_8c_a0480175e77f6a6335816a9affc91b8cd}{Check\+Sequencing} (const char $\ast$Roman\+Letter)
+\item 
+void \hyperlink{_roman_a_p_i_8c_a469f4a758e43c1c81d7f348994b3ee7f}{Trim\+String} (char $\ast$Buffer)
+\item 
+int \hyperlink{_roman_a_p_i_8c_a3a8467d3fd2b2587bf128da0838b1882}{Convert\+Roman\+Toint32} (const char $\ast$Roman\+Letter)
+\item 
+int \hyperlink{_roman_a_p_i_8c_a7d12e21f4dc10cbb6c72e448ab302284}{Roman\+Calculator\+Add} (char $\ast$Output, char $\ast$Val1, char $\ast$Val2, int Out\+Buffer\+Size)
+\item 
+int \hyperlink{_roman_a_p_i_8c_a4e97d5bcff77a1fb4621ab13f5efbce0}{Roman\+Calculator\+Subtract} (char $\ast$Output, char $\ast$Val1, char $\ast$Val2, int Out\+Buffer\+Size)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_roman_a_p_i_8c_a318f9a9bd35b0e2f947aca93df438d15}{Value\+Lookup\+Table} \mbox{[}256\mbox{]}
+\item 
+const char $\ast$ \hyperlink{_roman_a_p_i_8c_ab8084b8d535815e4523d62821cb7fa01}{Roman\+Letter\+Lookup\+Table} \mbox{[}3\mbox{]}\mbox{[}10\mbox{]}
+\item 
+const int \hyperlink{_roman_a_p_i_8c_a88fa7aa9aa55d649df7058351b40b80e}{Letter\+Sizes} \mbox{[}10\mbox{]} = \{ 0, 1, 2, 3, 2, 1, 2, 3, 4, 2 \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}!Check\+Sequencing@{Check\+Sequencing}}
+\index{Check\+Sequencing@{Check\+Sequencing}!Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}}
+\subsubsection[{\texorpdfstring{Check\+Sequencing(const char $\ast$\+Roman\+Letter)}{CheckSequencing(const char *RomanLetter)}}]{\setlength{\rightskip}{0pt plus 5cm}int Check\+Sequencing (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{Roman\+Letter}
+\end{DoxyParamCaption}
+)}\hypertarget{_roman_a_p_i_8c_a0480175e77f6a6335816a9affc91b8cd}{}\label{_roman_a_p_i_8c_a0480175e77f6a6335816a9affc91b8cd}
+Checks if the Roman Numbers alphabet sequence is correct...
+
+Checks if the Roman Numbers alphabet sequence is correct...
+
+
+\begin{DoxyParams}{Parameters}
+{\em Roman\+Letter} & Roman Number in char buffer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns an integer value 0 for success and negative for failure. 
+\end{DoxyReturn}
+
+
+Definition at line 176 of file Roman\+A\+P\+I.\+c.
+
+\index{Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}!Convert\+Int32\+To\+Roman\+Letter@{Convert\+Int32\+To\+Roman\+Letter}}
+\index{Convert\+Int32\+To\+Roman\+Letter@{Convert\+Int32\+To\+Roman\+Letter}!Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}}
+\subsubsection[{\texorpdfstring{Convert\+Int32\+To\+Roman\+Letter(int Number, char $\ast$\+Buffer, int Buffer\+Size)}{ConvertInt32ToRomanLetter(int Number, char *Buffer, int BufferSize)}}]{\setlength{\rightskip}{0pt plus 5cm}int Convert\+Int32\+To\+Roman\+Letter (
+\begin{DoxyParamCaption}
+\item[{int}]{Number, }
+\item[{char $\ast$}]{Buffer, }
+\item[{int}]{Buffer\+Size}
+\end{DoxyParamCaption}
+)}\hypertarget{_roman_a_p_i_8c_a11e86dd4776e0a195674e16ed1bace43}{}\label{_roman_a_p_i_8c_a11e86dd4776e0a195674e16ed1bace43}
+Converts Int32 type to Roman Number
+
+Converts 4 byte integer value to its Roman Number equivalent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Number} & Value to be converted. \\
+\hline
+{\em Buffer} & Buffer where Roman Letters will be written. \\
+\hline
+{\em Buffer\+Size} & \+: size of the buffer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns an integer value 0 for success and negative for failure. 
+\end{DoxyReturn}
+
+
+Definition at line 91 of file Roman\+A\+P\+I.\+c.
+
+\index{Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}!Convert\+Roman\+Toint32@{Convert\+Roman\+Toint32}}
+\index{Convert\+Roman\+Toint32@{Convert\+Roman\+Toint32}!Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}}
+\subsubsection[{\texorpdfstring{Convert\+Roman\+Toint32(const char $\ast$\+Roman\+Letter)}{ConvertRomanToint32(const char *RomanLetter)}}]{\setlength{\rightskip}{0pt plus 5cm}int Convert\+Roman\+Toint32 (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{Roman\+Letter}
+\end{DoxyParamCaption}
+)}\hypertarget{_roman_a_p_i_8c_a3a8467d3fd2b2587bf128da0838b1882}{}\label{_roman_a_p_i_8c_a3a8467d3fd2b2587bf128da0838b1882}
+Converts Roman Number to integer...
+
+Converts Roman Number to 4 byte integer data type ...
+
+
+\begin{DoxyParams}{Parameters}
+{\em Roman\+Letter} & Roman Number in char buffer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns an integer value of converted letter and negative for failure. 
+\end{DoxyReturn}
+
+
+Definition at line 285 of file Roman\+A\+P\+I.\+c.
+
+\index{Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}!Initialize\+Value\+Table@{Initialize\+Value\+Table}}
+\index{Initialize\+Value\+Table@{Initialize\+Value\+Table}!Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}}
+\subsubsection[{\texorpdfstring{Initialize\+Value\+Table()}{InitializeValueTable()}}]{\setlength{\rightskip}{0pt plus 5cm}void Initialize\+Value\+Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_roman_a_p_i_8c_a2d30b269638fc81f0b65343454d54787}{}\label{_roman_a_p_i_8c_a2d30b269638fc81f0b65343454d54787}
+
+
+Definition at line 30 of file Roman\+A\+P\+I.\+c.
+
+\index{Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}!Roman\+Calculator\+Add@{Roman\+Calculator\+Add}}
+\index{Roman\+Calculator\+Add@{Roman\+Calculator\+Add}!Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}}
+\subsubsection[{\texorpdfstring{Roman\+Calculator\+Add(char $\ast$\+Output, char $\ast$\+Val1, char $\ast$\+Val2, int Out\+Buffer\+Size)}{RomanCalculatorAdd(char *Output, char *Val1, char *Val2, int OutBufferSize)}}]{\setlength{\rightskip}{0pt plus 5cm}int Roman\+Calculator\+Add (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{Output, }
+\item[{char $\ast$}]{Val1, }
+\item[{char $\ast$}]{Val2, }
+\item[{int}]{Out\+Buffer\+Size}
+\end{DoxyParamCaption}
+)}\hypertarget{_roman_a_p_i_8c_a7d12e21f4dc10cbb6c72e448ab302284}{}\label{_roman_a_p_i_8c_a7d12e21f4dc10cbb6c72e448ab302284}
+Adds Two Roman Numbers...
+
+Adds Two Roman Numbers and stores them in Output buffer ...
+
+
+\begin{DoxyParams}{Parameters}
+{\em Output} & Resulting Roman Number in char buffer. \\
+\hline
+{\em Val1} & First Roman Number in char buffer. \\
+\hline
+{\em Val2} & Second Roman Number in char buffer. \\
+\hline
+{\em Out\+Buffer\+Size} & Output Buffer Size. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns an integer value of addition for success and negative for failure. 
+\end{DoxyReturn}
+
+
+Definition at line 358 of file Roman\+A\+P\+I.\+c.
+
+\index{Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}!Roman\+Calculator\+Subtract@{Roman\+Calculator\+Subtract}}
+\index{Roman\+Calculator\+Subtract@{Roman\+Calculator\+Subtract}!Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}}
+\subsubsection[{\texorpdfstring{Roman\+Calculator\+Subtract(char $\ast$\+Output, char $\ast$\+Val1, char $\ast$\+Val2, int Out\+Buffer\+Size)}{RomanCalculatorSubtract(char *Output, char *Val1, char *Val2, int OutBufferSize)}}]{\setlength{\rightskip}{0pt plus 5cm}int Roman\+Calculator\+Subtract (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{Output, }
+\item[{char $\ast$}]{Val1, }
+\item[{char $\ast$}]{Val2, }
+\item[{int}]{Out\+Buffer\+Size}
+\end{DoxyParamCaption}
+)}\hypertarget{_roman_a_p_i_8c_a4e97d5bcff77a1fb4621ab13f5efbce0}{}\label{_roman_a_p_i_8c_a4e97d5bcff77a1fb4621ab13f5efbce0}
+Subtracts Two Roman Numbers...
+
+Subtracts Two Roman Numbers and stores them in Output buffer ...
+
+
+\begin{DoxyParams}{Parameters}
+{\em Output} & Resulting Roman Number in char buffer. \\
+\hline
+{\em Val1} & First Roman Number in char buffer. \\
+\hline
+{\em Val2} & Second Roman Number in char buffer. \\
+\hline
+{\em Out\+Buffer\+Size} & Output Buffer Size. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns an integer value of addition for success and negative for failure. 
+\end{DoxyReturn}
+
+
+Definition at line 400 of file Roman\+A\+P\+I.\+c.
+
+\index{Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}!Trim\+String@{Trim\+String}}
+\index{Trim\+String@{Trim\+String}!Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}}
+\subsubsection[{\texorpdfstring{Trim\+String(char $\ast$\+Buffer)}{TrimString(char *Buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trim\+String (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{Buffer}
+\end{DoxyParamCaption}
+)}\hypertarget{_roman_a_p_i_8c_a469f4a758e43c1c81d7f348994b3ee7f}{}\label{_roman_a_p_i_8c_a469f4a758e43c1c81d7f348994b3ee7f}
+Trims The Roman Buffer string...
+
+Trims The whitespaces or other characters that is not in Roman Number set...
+
+
+\begin{DoxyParams}{Parameters}
+{\em Buffer} & Roman Number in char buffer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns an integer value 0 for success and negative for failure. 
+\end{DoxyReturn}
+
+
+Definition at line 236 of file Roman\+A\+P\+I.\+c.
+
+\index{Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}!Write\+Letter\+To\+Buffer@{Write\+Letter\+To\+Buffer}}
+\index{Write\+Letter\+To\+Buffer@{Write\+Letter\+To\+Buffer}!Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}}
+\subsubsection[{\texorpdfstring{Write\+Letter\+To\+Buffer(char $\ast$buffer, const char $\ast$letter, int size)}{WriteLetterToBuffer(char *buffer, const char *letter, int size)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Write\+Letter\+To\+Buffer (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buffer, }
+\item[{const char $\ast$}]{letter, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{_roman_a_p_i_8c_a8f4bc67a3689c865c83990a7c9dbb0c2}{}\label{_roman_a_p_i_8c_a8f4bc67a3689c865c83990a7c9dbb0c2}
+Writes Roman Letters to buffer
+
+Writes Roman Letters from lookup table to buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & buffer the letter will be written in. (previous index pointer) \\
+\hline
+{\em letter} & corresponding letter from lookup table. \\
+\hline
+{\em size} & \+: size of the letter from lookup table. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the last index of the buffer 
+\end{DoxyReturn}
+
+
+Definition at line 58 of file Roman\+A\+P\+I.\+c.
+
+
+
+\subsection{Variable Documentation}
+\index{Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}!Letter\+Sizes@{Letter\+Sizes}}
+\index{Letter\+Sizes@{Letter\+Sizes}!Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}}
+\subsubsection[{\texorpdfstring{Letter\+Sizes}{LetterSizes}}]{\setlength{\rightskip}{0pt plus 5cm}const int Letter\+Sizes\mbox{[}10\mbox{]} = \{ 0, 1, 2, 3, 2, 1, 2, 3, 4, 2 \}}\hypertarget{_roman_a_p_i_8c_a88fa7aa9aa55d649df7058351b40b80e}{}\label{_roman_a_p_i_8c_a88fa7aa9aa55d649df7058351b40b80e}
+
+
+Definition at line 26 of file Roman\+A\+P\+I.\+c.
+
+\index{Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}!Roman\+Letter\+Lookup\+Table@{Roman\+Letter\+Lookup\+Table}}
+\index{Roman\+Letter\+Lookup\+Table@{Roman\+Letter\+Lookup\+Table}!Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}}
+\subsubsection[{\texorpdfstring{Roman\+Letter\+Lookup\+Table}{RomanLetterLookupTable}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Roman\+Letter\+Lookup\+Table\mbox{[}3\mbox{]}\mbox{[}10\mbox{]}}\hypertarget{_roman_a_p_i_8c_ab8084b8d535815e4523d62821cb7fa01}{}\label{_roman_a_p_i_8c_ab8084b8d535815e4523d62821cb7fa01}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+\{
+    \{ \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"I"}, \textcolor{stringliteral}{"II"}, \textcolor{stringliteral}{"III"}, \textcolor{stringliteral}{"IV"}, \textcolor{stringliteral}{"V"}, \textcolor{stringliteral}{"VI"}, \textcolor{stringliteral}{"VII"}, \textcolor{stringliteral}{"VIII"}, \textcolor{stringliteral}{"IX"} \},
+    \{ \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"X"}, \textcolor{stringliteral}{"XX"}, \textcolor{stringliteral}{"XXX"}, \textcolor{stringliteral}{"XL"}, \textcolor{stringliteral}{"L"}, \textcolor{stringliteral}{"LX"}, \textcolor{stringliteral}{"LXX"}, \textcolor{stringliteral}{"LXXX"}, \textcolor{stringliteral}{"XC"} \},
+    \{ \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"C"}, \textcolor{stringliteral}{"CC"}, \textcolor{stringliteral}{"CCC"}, \textcolor{stringliteral}{"CD"}, \textcolor{stringliteral}{"D"}, \textcolor{stringliteral}{"DC"}, \textcolor{stringliteral}{"DCC"}, \textcolor{stringliteral}{"DCCC"}, \textcolor{stringliteral}{"CM"} \}
+\}
+\end{DoxyCode}
+
+
+Definition at line 19 of file Roman\+A\+P\+I.\+c.
+
+\index{Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}!Value\+Lookup\+Table@{Value\+Lookup\+Table}}
+\index{Value\+Lookup\+Table@{Value\+Lookup\+Table}!Roman\+A\+P\+I.\+c@{Roman\+A\+P\+I.\+c}}
+\subsubsection[{\texorpdfstring{Value\+Lookup\+Table}{ValueLookupTable}}]{\setlength{\rightskip}{0pt plus 5cm}int Value\+Lookup\+Table\mbox{[}256\mbox{]}}\hypertarget{_roman_a_p_i_8c_a318f9a9bd35b0e2f947aca93df438d15}{}\label{_roman_a_p_i_8c_a318f9a9bd35b0e2f947aca93df438d15}
+
+
+Definition at line 16 of file Roman\+A\+P\+I.\+c.
+

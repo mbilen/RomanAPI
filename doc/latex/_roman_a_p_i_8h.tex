@@ -1,0 +1,127 @@
+\hypertarget{_roman_a_p_i_8h}{}\section{D\+:/\+Shared/\+S\+D\+T/\+T\+M\+P/\+Roman\+A\+P\+I\+Project/\+Roman\+A\+P\+I/include/\+Roman\+A\+PI.h File Reference}
+\label{_roman_a_p_i_8h}\index{D\+:/\+Shared/\+S\+D\+T/\+T\+M\+P/\+Roman\+A\+P\+I\+Project/\+Roman\+A\+P\+I/include/\+Roman\+A\+P\+I.\+h@{D\+:/\+Shared/\+S\+D\+T/\+T\+M\+P/\+Roman\+A\+P\+I\+Project/\+Roman\+A\+P\+I/include/\+Roman\+A\+P\+I.\+h}}
+{\ttfamily \#include \char`\"{}Roman\+Errors.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Roman\+Strings.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_roman_a_p_i_8h_a9c3b72cfaed1d5aea759d118f2a82197}{D\+E\+B\+U\+G\+\_\+\+O\+UT}(X)
+\item 
+\#define \hyperlink{_roman_a_p_i_8h_a1bb283bd7893b9855e2f23013891fc82}{I\+N\+P\+UT}
+\item 
+\#define \hyperlink{_roman_a_p_i_8h_a61a3c9a18380aafb6e430e79bf596557}{O\+U\+T\+P\+UT}
+\item 
+\#define \hyperlink{_roman_a_p_i_8h_a7e7997e7b304d888573d9b3c04d1ecbf}{I\+N\+P\+U\+T\+\_\+\+O\+U\+T\+P\+UT}
+\item 
+\#define \hyperlink{_roman_a_p_i_8h_a51a42bc10c27b7afeae71597d94d8cba}{R\+O\+M\+A\+N\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}~1024
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_roman_a_p_i_8h_a1a11ea241bc1946ccc6106148e740551}{Roman\+Calculator\+Add} (\hyperlink{_roman_a_p_i_8h_a61a3c9a18380aafb6e430e79bf596557}{O\+U\+T\+P\+UT} char $\ast$Output, \hyperlink{_roman_a_p_i_8h_a1bb283bd7893b9855e2f23013891fc82}{I\+N\+P\+UT} char $\ast$Val1, \hyperlink{_roman_a_p_i_8h_a1bb283bd7893b9855e2f23013891fc82}{I\+N\+P\+UT} char $\ast$Val2, \hyperlink{_roman_a_p_i_8h_a1bb283bd7893b9855e2f23013891fc82}{I\+N\+P\+UT} int Out\+Buffer\+Size)
+\item 
+int \hyperlink{_roman_a_p_i_8h_acb5218e2c36b7733568ff6c5919846f7}{Roman\+Calculator\+Subtract} (\hyperlink{_roman_a_p_i_8h_a61a3c9a18380aafb6e430e79bf596557}{O\+U\+T\+P\+UT} char $\ast$Output, \hyperlink{_roman_a_p_i_8h_a1bb283bd7893b9855e2f23013891fc82}{I\+N\+P\+UT} char $\ast$Val1, \hyperlink{_roman_a_p_i_8h_a1bb283bd7893b9855e2f23013891fc82}{I\+N\+P\+UT} char $\ast$Val2, \hyperlink{_roman_a_p_i_8h_a1bb283bd7893b9855e2f23013891fc82}{I\+N\+P\+UT} int Out\+Buffer\+Size)
+\item 
+int \hyperlink{_roman_a_p_i_8h_a5314aba18bcc61d24d0a58a92789bde4}{Convert\+Int32\+To\+Roman\+Letter} (\hyperlink{_roman_a_p_i_8h_a1bb283bd7893b9855e2f23013891fc82}{I\+N\+P\+UT} int Number, \hyperlink{_roman_a_p_i_8h_a61a3c9a18380aafb6e430e79bf596557}{O\+U\+T\+P\+UT} char $\ast$Buffer, \hyperlink{_roman_a_p_i_8h_a1bb283bd7893b9855e2f23013891fc82}{I\+N\+P\+UT} int Buffer\+Size)
+\item 
+int \hyperlink{_roman_a_p_i_8h_a1e6bf0dde57c2a7e331425674a93f7cc}{Convert\+Roman\+Toint32} (\hyperlink{_roman_a_p_i_8h_a1bb283bd7893b9855e2f23013891fc82}{I\+N\+P\+UT} const char $\ast$Roman\+Letter)
+\item 
+void \hyperlink{_roman_a_p_i_8h_a4a243ddfeac504194b090ed24bdea206}{Trim\+String} (\hyperlink{_roman_a_p_i_8h_a7e7997e7b304d888573d9b3c04d1ecbf}{I\+N\+P\+U\+T\+\_\+\+O\+U\+T\+P\+UT} char $\ast$Buffer)
+\item 
+int \hyperlink{_roman_a_p_i_8h_a1c1b15970dbd9879efab1221b6efc212}{Check\+Sequencing} (\hyperlink{_roman_a_p_i_8h_a1bb283bd7893b9855e2f23013891fc82}{I\+N\+P\+UT} const char $\ast$Roman\+Letter)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}!D\+E\+B\+U\+G\+\_\+\+O\+UT@{D\+E\+B\+U\+G\+\_\+\+O\+UT}}
+\index{D\+E\+B\+U\+G\+\_\+\+O\+UT@{D\+E\+B\+U\+G\+\_\+\+O\+UT}!Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+O\+UT}{DEBUG_OUT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+O\+UT(
+\begin{DoxyParamCaption}
+\item[{}]{X}
+\end{DoxyParamCaption}
+)}\hypertarget{_roman_a_p_i_8h_a9c3b72cfaed1d5aea759d118f2a82197}{}\label{_roman_a_p_i_8h_a9c3b72cfaed1d5aea759d118f2a82197}
+
+
+Definition at line 12 of file Roman\+A\+P\+I.\+h.
+
+\index{Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}!I\+N\+P\+UT@{I\+N\+P\+UT}}
+\index{I\+N\+P\+UT@{I\+N\+P\+UT}!Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}}
+\subsubsection[{\texorpdfstring{I\+N\+P\+UT}{INPUT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+P\+UT}\hypertarget{_roman_a_p_i_8h_a1bb283bd7893b9855e2f23013891fc82}{}\label{_roman_a_p_i_8h_a1bb283bd7893b9855e2f23013891fc82}
+
+
+Definition at line 15 of file Roman\+A\+P\+I.\+h.
+
+\index{Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}!I\+N\+P\+U\+T\+\_\+\+O\+U\+T\+P\+UT@{I\+N\+P\+U\+T\+\_\+\+O\+U\+T\+P\+UT}}
+\index{I\+N\+P\+U\+T\+\_\+\+O\+U\+T\+P\+UT@{I\+N\+P\+U\+T\+\_\+\+O\+U\+T\+P\+UT}!Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}}
+\subsubsection[{\texorpdfstring{I\+N\+P\+U\+T\+\_\+\+O\+U\+T\+P\+UT}{INPUT_OUTPUT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+P\+U\+T\+\_\+\+O\+U\+T\+P\+UT}\hypertarget{_roman_a_p_i_8h_a7e7997e7b304d888573d9b3c04d1ecbf}{}\label{_roman_a_p_i_8h_a7e7997e7b304d888573d9b3c04d1ecbf}
+
+
+Definition at line 17 of file Roman\+A\+P\+I.\+h.
+
+\index{Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}!O\+U\+T\+P\+UT@{O\+U\+T\+P\+UT}}
+\index{O\+U\+T\+P\+UT@{O\+U\+T\+P\+UT}!Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}}
+\subsubsection[{\texorpdfstring{O\+U\+T\+P\+UT}{OUTPUT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+U\+T\+P\+UT}\hypertarget{_roman_a_p_i_8h_a61a3c9a18380aafb6e430e79bf596557}{}\label{_roman_a_p_i_8h_a61a3c9a18380aafb6e430e79bf596557}
+
+
+Definition at line 16 of file Roman\+A\+P\+I.\+h.
+
+\index{Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}!R\+O\+M\+A\+N\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE@{R\+O\+M\+A\+N\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}
+\index{R\+O\+M\+A\+N\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE@{R\+O\+M\+A\+N\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}!Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}}
+\subsubsection[{\texorpdfstring{R\+O\+M\+A\+N\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}{ROMAN_NUMBER_BUFFER_SIZE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+O\+M\+A\+N\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE~1024}\hypertarget{_roman_a_p_i_8h_a51a42bc10c27b7afeae71597d94d8cba}{}\label{_roman_a_p_i_8h_a51a42bc10c27b7afeae71597d94d8cba}
+
+
+Definition at line 19 of file Roman\+A\+P\+I.\+h.
+
+
+
+\subsection{Function Documentation}
+\index{Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}!Check\+Sequencing@{Check\+Sequencing}}
+\index{Check\+Sequencing@{Check\+Sequencing}!Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}}
+\subsubsection[{\texorpdfstring{Check\+Sequencing(\+I\+N\+P\+U\+T const char $\ast$\+Roman\+Letter)}{CheckSequencing(INPUT const char *RomanLetter)}}]{\setlength{\rightskip}{0pt plus 5cm}int Check\+Sequencing (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+N\+P\+UT} const char $\ast$}]{Roman\+Letter}
+\end{DoxyParamCaption}
+)}\hypertarget{_roman_a_p_i_8h_a1c1b15970dbd9879efab1221b6efc212}{}\label{_roman_a_p_i_8h_a1c1b15970dbd9879efab1221b6efc212}
+\index{Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}!Convert\+Int32\+To\+Roman\+Letter@{Convert\+Int32\+To\+Roman\+Letter}}
+\index{Convert\+Int32\+To\+Roman\+Letter@{Convert\+Int32\+To\+Roman\+Letter}!Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}}
+\subsubsection[{\texorpdfstring{Convert\+Int32\+To\+Roman\+Letter(\+I\+N\+P\+U\+T int Number, O\+U\+T\+P\+U\+T char $\ast$\+Buffer, I\+N\+P\+U\+T int Buffer\+Size)}{ConvertInt32ToRomanLetter(INPUT int Number, OUTPUT char *Buffer, INPUT int BufferSize)}}]{\setlength{\rightskip}{0pt plus 5cm}int Convert\+Int32\+To\+Roman\+Letter (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+N\+P\+UT} int}]{Number, }
+\item[{{\bf O\+U\+T\+P\+UT} char $\ast$}]{Buffer, }
+\item[{{\bf I\+N\+P\+UT} int}]{Buffer\+Size}
+\end{DoxyParamCaption}
+)}\hypertarget{_roman_a_p_i_8h_a5314aba18bcc61d24d0a58a92789bde4}{}\label{_roman_a_p_i_8h_a5314aba18bcc61d24d0a58a92789bde4}
+\index{Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}!Convert\+Roman\+Toint32@{Convert\+Roman\+Toint32}}
+\index{Convert\+Roman\+Toint32@{Convert\+Roman\+Toint32}!Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}}
+\subsubsection[{\texorpdfstring{Convert\+Roman\+Toint32(\+I\+N\+P\+U\+T const char $\ast$\+Roman\+Letter)}{ConvertRomanToint32(INPUT const char *RomanLetter)}}]{\setlength{\rightskip}{0pt plus 5cm}int Convert\+Roman\+Toint32 (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+N\+P\+UT} const char $\ast$}]{Roman\+Letter}
+\end{DoxyParamCaption}
+)}\hypertarget{_roman_a_p_i_8h_a1e6bf0dde57c2a7e331425674a93f7cc}{}\label{_roman_a_p_i_8h_a1e6bf0dde57c2a7e331425674a93f7cc}
+\index{Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}!Roman\+Calculator\+Add@{Roman\+Calculator\+Add}}
+\index{Roman\+Calculator\+Add@{Roman\+Calculator\+Add}!Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}}
+\subsubsection[{\texorpdfstring{Roman\+Calculator\+Add(\+O\+U\+T\+P\+U\+T char $\ast$\+Output, I\+N\+P\+U\+T char $\ast$\+Val1, I\+N\+P\+U\+T char $\ast$\+Val2, I\+N\+P\+U\+T int Out\+Buffer\+Size)}{RomanCalculatorAdd(OUTPUT char *Output, INPUT char *Val1, INPUT char *Val2, INPUT int OutBufferSize)}}]{\setlength{\rightskip}{0pt plus 5cm}int Roman\+Calculator\+Add (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+U\+T\+P\+UT} char $\ast$}]{Output, }
+\item[{{\bf I\+N\+P\+UT} char $\ast$}]{Val1, }
+\item[{{\bf I\+N\+P\+UT} char $\ast$}]{Val2, }
+\item[{{\bf I\+N\+P\+UT} int}]{Out\+Buffer\+Size}
+\end{DoxyParamCaption}
+)}\hypertarget{_roman_a_p_i_8h_a1a11ea241bc1946ccc6106148e740551}{}\label{_roman_a_p_i_8h_a1a11ea241bc1946ccc6106148e740551}
+\index{Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}!Roman\+Calculator\+Subtract@{Roman\+Calculator\+Subtract}}
+\index{Roman\+Calculator\+Subtract@{Roman\+Calculator\+Subtract}!Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}}
+\subsubsection[{\texorpdfstring{Roman\+Calculator\+Subtract(\+O\+U\+T\+P\+U\+T char $\ast$\+Output, I\+N\+P\+U\+T char $\ast$\+Val1, I\+N\+P\+U\+T char $\ast$\+Val2, I\+N\+P\+U\+T int Out\+Buffer\+Size)}{RomanCalculatorSubtract(OUTPUT char *Output, INPUT char *Val1, INPUT char *Val2, INPUT int OutBufferSize)}}]{\setlength{\rightskip}{0pt plus 5cm}int Roman\+Calculator\+Subtract (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+U\+T\+P\+UT} char $\ast$}]{Output, }
+\item[{{\bf I\+N\+P\+UT} char $\ast$}]{Val1, }
+\item[{{\bf I\+N\+P\+UT} char $\ast$}]{Val2, }
+\item[{{\bf I\+N\+P\+UT} int}]{Out\+Buffer\+Size}
+\end{DoxyParamCaption}
+)}\hypertarget{_roman_a_p_i_8h_acb5218e2c36b7733568ff6c5919846f7}{}\label{_roman_a_p_i_8h_acb5218e2c36b7733568ff6c5919846f7}
+\index{Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}!Trim\+String@{Trim\+String}}
+\index{Trim\+String@{Trim\+String}!Roman\+A\+P\+I.\+h@{Roman\+A\+P\+I.\+h}}
+\subsubsection[{\texorpdfstring{Trim\+String(\+I\+N\+P\+U\+T\+\_\+\+O\+U\+T\+P\+U\+T char $\ast$\+Buffer)}{TrimString(INPUT_OUTPUT char *Buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trim\+String (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+N\+P\+U\+T\+\_\+\+O\+U\+T\+P\+UT} char $\ast$}]{Buffer}
+\end{DoxyParamCaption}
+)}\hypertarget{_roman_a_p_i_8h_a4a243ddfeac504194b090ed24bdea206}{}\label{_roman_a_p_i_8h_a4a243ddfeac504194b090ed24bdea206}

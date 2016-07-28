@@ -1,0 +1,12 @@
+
+
+
+#include	"RomanAPI.h"
+
+
+#test ConvertRomanToInt
+
+		fail_unless(ConvertRomanToint32("XXX") 	== 30, "ConvertRomanToInt function worked");
+		fail_unless(ConvertRomanToint32("CXXV")	== 125, "ConvertRomanToInt function worked");
+		fail_unless(ConvertRomanToint32("CXXXIX")== 139, "ConvertRomanToInt function worked");
+		fail_unless(ConvertRomanToint32("MCCXCIX")== 1299, "ConvertRomanToInt function worked");

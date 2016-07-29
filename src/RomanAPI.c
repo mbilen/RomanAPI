@@ -203,6 +203,9 @@ int		ConvertInt32ToRomanLetter(int Number, char * Buffer, int BufferSize)
 
 int IsValid(char Previous, char Current)
 {
+
+
+
 	if (Current == 'M')
 	{
 		if (Previous == 'M' || Previous == 'C')
@@ -212,7 +215,7 @@ int IsValid(char Previous, char Current)
 	}
 	else if (Current == 'D')
 	{
-		if (Previous == 'M' || Previous == 'C')
+		if (Previous == 'C')
 			return 0;
 		else
 			return -1;
@@ -221,7 +224,7 @@ int IsValid(char Previous, char Current)
 
 	else if (Current == 'C')
 	{
-		if (Previous == 'M' || Previous == 'D' || Previous == 'C' || Previous == 'X')
+		if (Previous == 'X')
 			return 0;
 		else
 			return -1;
@@ -230,7 +233,7 @@ int IsValid(char Previous, char Current)
 
 	else if (Current == 'L')
 	{
-		if (Previous == 'M' || Previous == 'D' || Previous == 'C' || Previous == 'X')
+		if ( Previous == 'X')
 			return 0;
 		else
 			return -1;
@@ -239,16 +242,15 @@ int IsValid(char Previous, char Current)
 
 	else if (Current == 'X')
 	{
-		if (Previous == 'M' || Previous == 'D' || Previous == 'C' || Previous == 'L' || Previous == 'X')
+		if ( Previous == 'X')
 			return 0;
 		else
 			return -1;
-
 	}
 
 	else if (Current == 'V')
 	{
-		if (Previous == 'M' || Previous == 'D' || Previous == 'C' || Previous == 'L' || Previous == 'X' || Previous == 'I')
+		if ( Previous == 'I')
 			return 0;
 		else
 			return -1;
@@ -256,7 +258,7 @@ int IsValid(char Previous, char Current)
 
 	else if (Current == 'I')
 	{
-		if (Previous == 'M' || Previous == 'D' || Previous == 'C' || Previous == 'L' || Previous == 'X' || Previous == 'V' || Previous == 'I')
+		if ( Previous == 'I')
 			return 0;
 		else
 			return -1;
@@ -350,11 +352,16 @@ int		CheckSequencing(const char * RomanLetter)
 		/*	Check sequences like IC IV...*/
 		if (PreviousPtr != NULL)
 		{
-			if (IsValid(*PreviousPtr, *cptr) < 0)
+			if (ValueLookupTable[*PreviousPtr] < ValueLookupTable[*cptr])
 			{
-				printf("YYY:%c%c%c\n", *PreviousPtr, *cptr, *Nextptr);
-				return -ROMAN_ERROR_CODE_WRONG_SEQUENCE_FORMAT;
+				if (IsValid(*PreviousPtr, *cptr) < 0)
+				{
+					printf("YYY:%c%c%c\n", *PreviousPtr, *cptr, *Nextptr);
+					return -ROMAN_ERROR_CODE_WRONG_SEQUENCE_FORMAT;
+				}
+
 			}
+
 		}
 
 		/*	Check how many recurring letters we have...*/

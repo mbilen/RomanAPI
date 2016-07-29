@@ -21,7 +21,28 @@ typedef	enum ROMAN_EROR_CODES
 
 
 
+
+/**
+* Prints out error code as human readable string...
+*
+* Prints out error code as human readable string...
+*
+*
+* @param  errorval:  integer representing error value..
+* @return none.
+*/
 void	PrintErrorString(int errorval);
+
+
+/**
+* Selects error codes Human readable version from RomanErrorStrings...
+*
+* Selects error codes Human readable version from RomanErrorStrings...
+*
+*
+* @param  errorval:  integer representing error value..
+* @return Human readable character string of error code...
+*/
 const char *	GetErrorString(int errorval);
 
 

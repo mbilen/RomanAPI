@@ -22,27 +22,29 @@ const char	* RomanErrorStrings[ROMAN_ERROR_CODE_COUNT+1] =
 
 
 
-
-/*********************************************************************************************
-* 	Function Name	:
-*	Purpose			:
-* 	Parameters		: 	-
-* 	Global Variables: 	-
-* 	Return Values	: 	-
-**********************************************************************************************/
+/**
+* Prints out error code as human readable string...
+*
+* Prints out error code as human readable string...
+*
+*
+* @param  errorval:  integer representing error value..
+* @return none.
+*/
 void	PrintErrorString(int errorval)
 {
 	printf("RomanAPI Error : %s...\n", GetErrorString(errorval));
 }
 
-
-/*********************************************************************************************
-* 	Function Name	:
-*	Purpose			:
-* 	Parameters		: 	-
-* 	Global Variables: 	-
-* 	Return Values	: 	-
-**********************************************************************************************/
+/**
+* Selects error codes Human readable version from RomanErrorStrings...
+*
+* Selects error codes Human readable version from RomanErrorStrings...
+*
+*
+* @param  errorval:  integer representing error value..
+* @return Human readable character string of error code...
+*/
 const char *	GetErrorString(int errorval)
 {
 	

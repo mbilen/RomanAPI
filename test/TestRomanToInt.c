@@ -22,24 +22,38 @@ int main()
 	char NullBuffer[32];
 	NullBuffer[0] = '\0';
 
-
-	Value = ConvertRomanToint32("");
-	printf("%d", Value);
-	Value = ConvertRomanToint32(NULL);
-	printf("%d", Value);
 	Value = ConvertRomanToint32(NullBuffer);
-	printf("%d", Value);
+	if (Value >= 0)
+	{
+		return -1;
+	}
+	Value = ConvertRomanToint32(NULL);
+	if (Value >= 0)
+	{
+		return -1;
+	}
+	Value = ConvertRomanToint32(NullBuffer);
+	if (Value >= 0)
+	{
+		return -1;
+	}
+	/*
 	Value = ConvertRomanToint32("MMCXXXXIII");
-	printf("%d", Value);
+	if (Value >= 0)
+	{
+
+	return -1;
+	}
+	*/
+	/*
 	Value = ConvertRomanToint32("MMCXXXMIII");
-	printf("%d", Value);
+	if (Value >= 0)
+	{
+	return -1;
+	}
+	*/
 
-	
-	
-
-
-
-	Value = ConvertRomanToint32("XXX");			printf("Should be 30\n");
+	Value = ConvertRomanToint32("XXX");
 
 	if (Value != 30)
 	{
@@ -47,29 +61,29 @@ int main()
 		return -1;
 	}
 
-	Value = ConvertRomanToint32("CXXV");		printf("Should be 125\n");
+	Value = ConvertRomanToint32("CXXV");
 	if (Value != 125)
 	{
 		printf("Wrong Conversion...\n");
 		return -1;
 	}
 
-	Value = ConvertRomanToint32("CXXXIX");		printf("Should be 139");
+	Value = ConvertRomanToint32("CXXXIX");
 	if (Value != 139)
 	{
 		printf("Wrong Conversion...\n");
 		return -1;
 	}
 
-	Value = ConvertRomanToint32("MCCXCIX");		printf("Should be 1299");
+	Value = ConvertRomanToint32("MCCXCIX");
 	if (Value != 1299)
 	{
 		printf("Wrong Conversion...\n");
 		return -1;
 	}
 
+	return 0;
 
-return 0;
 }
 
 

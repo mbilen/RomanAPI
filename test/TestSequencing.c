@@ -19,20 +19,33 @@ int		main()
 {
 	char NullBuffer[32];
 	NullBuffer[0] = '\0';
-/*
+
 	if (CheckSequencing(NULL) >= 0)
 	{
-		printf("Should not pass...");
+		printf("Should not allow NULL pointers...");
 		return -1;
 	}
 
 	if (CheckSequencing(NullBuffer) >= 0)
 	{
+		printf("Should not allow NULL buffer...");
+		return -1;
+	}
+
+	//----------------------------------------------
+	printf("Testing : MCLXLXII\n");
+	if (CheckSequencing("MCLXLXII") >= 0)
+	{
 		printf("Should not pass...");
 		return -1;
 	}
-*/
-//----------------------------------------------
+
+	printf("Testing : MCLMXXX\n");
+	if (CheckSequencing("MCLMXXX") >= 0)
+	{
+		printf("Should not pass...");
+		return -1;
+	}
 
 	if (CheckSequencing("MCLXXXX") >= 0)
 	{

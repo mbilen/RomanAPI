@@ -1,0 +1,26 @@
+
+
+#include	"RomanAPI.h"
+
+
+#test RomanToInt
+
+
+
+	fail_unless(CheckSequencing(NULL) < 0 , "Null Arg Test");
+	fail_unless(CheckSequencing("") < 0 , "Empty String");
+	
+
+	fail_unless(CheckSequencing("MCLXLXII") < 0 , "Sequence");
+	fail_unless(CheckSequencing("MCLMXXX") < 0 , "Sequence");
+	fail_unless(CheckSequencing("MCLXXXX") < 0 , "Sequence");
+	fail_unless(CheckSequencing("MCCCCXXX") < 0 , "Sequence");
+	fail_unless(CheckSequencing("MCLLXXX") < 0 , "Sequence");
+	fail_unless(CheckSequencing("MCLXXXIIII") < 0 , "Sequence");
+
+	
+	fail_unless(CheckSequencing("MCLXXXIII") >= 0 , "Sequence");
+	fail_unless(CheckSequencing("III") >= 0 , "Sequence");
+	fail_unless(CheckSequencing("MMMMMMMMMMMMMMMMMMMMMMMMM") >= 0 , "Sequence");
+	fail_unless(CheckSequencing("MMMMMMMMML") >= 0 , "Sequence");
+	

@@ -1,0 +1,21 @@
+
+
+#include	"RomanAPI.h"
+
+
+#test IntToRoman
+
+	char Buffer[256];
+
+
+
+
+	fail_unless(ConvertInt32ToRomanLetter(0,Buffer,256) < 0 , "Zero Test");
+	fail_unless(ConvertInt32ToRomanLetter(-20,Buffer,256) < 0 , "Minus Arg");
+
+	fail_unless(ConvertInt32ToRomanLetter(10,Buffer,256) >= 0 , "Null Arg Test");
+	fail_unless(ConvertInt32ToRomanLetter(20,Buffer,256) >= 0 , "Null Arg Test");
+
+
+	
+	

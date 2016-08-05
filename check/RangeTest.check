@@ -1,0 +1,35 @@
+
+#include	"RomanAPI.h"
+#include 	<stdlib.h>
+
+#test RangeTest
+
+	char str1[] = " XXXIV ";
+	char str2[] = "ABCDEFGH";
+
+	fail_unless(TrimString(NULL) < 0 , "Null Arg Test");
+	fail_unless(TrimString("") < 0 , "Empty String");
+	
+
+	fail_unless(TrimString(str1) >= 0 , "TrimString function");
+	fail_unless(strcmp(str1, "XXXIV") == 0 , "Compare String XXXIV...");
+
+	fail_unless(TrimString(str2) >= 0 , "TrimString function");
+	fail_unless(strcmp(str2, "CD") == 0 , "Compare String CD...");
+	
+	
+	int i;
+	char Buffer[256];
+	int ReturnValue = 0;
+	int ErrorCount = 0;
+
+	for (i = 1; i < 10000; i++)
+	{
+
+		fail_unless(ConvertInt32ToRomanLetter(i, Buffer, 256) >= 0 , "ConvertInt32ToRomanLetter function");
+		fail_unless(ConvertRomanToint32(Buffer) == i , "Compare String XXXIV...");
+		
+
+	}
+
+	

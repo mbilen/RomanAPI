@@ -1,0 +1,23 @@
+
+
+
+
+#include	"RomanAPI.h"
+
+
+#test RomanToInt
+
+	char OutBuffer[256];
+
+	
+	fail_unless(RomanCalculatorSubtract(OutBuffer,		"IV",	"III",	256) == 1 , "Null Arg Test");
+	fail_unless(RomanCalculatorSubtract(OutBuffer,		"III",	NULL,	256) < 0 , "Null Arg Test");
+	fail_unless(RomanCalculatorSubtract(OutBuffer,		NULL,	"IV",	256) < 0 , "Null Arg Test");
+	fail_unless(RomanCalculatorSubtract(OutBuffer,		NULL,	NULL,	256) < 0 , "Null Arg Test");
+
+	fail_unless(RomanCalculatorSubtract(NULL,		"III",	"IV",	256) < 0 , "Null Arg Test");
+	fail_unless(RomanCalculatorSubtract(NULL,		"III",	NULL,	256) < 0 , "Null Arg Test");
+	fail_unless(RomanCalculatorSubtract(NULL,		NULL,	"IV",	256) < 0 , "Null Arg Test");
+	fail_unless(RomanCalculatorSubtract(NULL,		NULL,	NULL,	256) < 0 , "Null Arg Test");
+
+	

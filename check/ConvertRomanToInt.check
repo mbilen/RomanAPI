@@ -6,7 +6,14 @@
 
 #test ConvertRomanToInt
 
-		fail_unless(ConvertRomanToint32("XXX") 	== 30, "ConvertRomanToInt function worked");
-		fail_unless(ConvertRomanToint32("CXXV")	== 125, "ConvertRomanToInt function worked");
-		fail_unless(ConvertRomanToint32("CXXXIX")== 139, "ConvertRomanToInt function worked");
-		fail_unless(ConvertRomanToint32("MCCXCIX")== 1299, "ConvertRomanToInt function worked");
+
+		fail_unless(ConvertRomanToint32(NULL) < 0 , "Null Arg Test");
+		fail_unless(ConvertRomanToint32("") < 0 , "Empty String");
+
+		fail_unless(ConvertRomanToint32("XXX") 	== 30, "ConvertRomanToInt value should be 30");
+		fail_unless(ConvertRomanToint32("CXXV")	== 125, "ConvertRomanToInt value should be 125");
+		fail_unless(ConvertRomanToint32("CXXXIX")== 139, "ConvertRomanToInt value should be 139");
+		fail_unless(ConvertRomanToint32("MCCXCIX")== 1299, "ConvertRomanToInt value should be 1299");
+
+		
+		

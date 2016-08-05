@@ -1,0 +1,27 @@
+
+
+
+
+#include	"RomanAPI.h"
+
+
+#test RomanToInt
+
+
+
+	fail_unless(ConvertRomanToint32(NULL) < 0 , "Null Arg Test");
+	fail_unless(ConvertRomanToint32("") < 0 , "Empty String");
+	
+
+	fail_unless(ConvertRomanToint32("XXX") == 30 , "Convert Function");
+	fail_unless(ConvertRomanToint32("CXXV") == 125 , "Convert Function");
+	fail_unless(ConvertRomanToint32("CXXXIX") == 139 , "Convert Function");
+	fail_unless(ConvertRomanToint32("MCCXCIX") == 1299 , "Convert Function");
+	fail_unless(ConvertRomanToint32("III") == 3 , "Convert Function");
+	fail_unless(ConvertRomanToint32("XIX") == 19 , "Convert Function");
+
+
+
+	
+	
+	
